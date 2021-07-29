@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+<link href="lux.css" rel="stylesheet"
+		type="text/css"/>
+		<script type ="text/javascript">
+			function validatation(){
+				var email = document.getElementById("email").value;
+				var pass = document.getElementById("pass").value;
+				var cpass = document.getElementById("cpass").value;
+				if(email==""|| pass=="" || cpass==""){
+					alert("fields should not be blank");
+					return false;
+				}
+				if(pass!=cpass){
+				alert("password dosn't match");
+				return false;
+				}
+				else if(pass!=cpass) 
+				{
+				alert("password match");
+				return true;
+				}
+		}	
+		
+		</script>
+</head>
+<body>
+<div class ="jumbotron text-center" style="margin-bottom:0px">
+			<h1> Welcome to NAH Motors </h1>
+			<p> Signup to browse and Register your dream car </p>
+		</div>
+<br>
+<form action="home page.html" name="signup" onSubmit="return validatation();">
+	    <div class="form-group">
+      <label for="exampleInputEmail1"><b>Email address</b></label>
+      <input type="email" id="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Password</label>
+      <input type="password" id="pass" name="pass" class="form-control" id="exampleInputPassword1" placeholder="Password">
+    </div>
+	<div class="form-group">
+      <label for="exampleInputPassword1">Confirm Password</label>
+      <input type="password" id="cpass" name="cpass" class="form-control" id="exampleInputPassword1" placeholder="Confirm Password">
+    </div>
+	<center>
+	<form action="home page.html" method="get">
+	<button onclick="submit" class="btn btn-info">Signup</button>
+	</form>
+	
+	<br>
+	
+	<br>
+	<a href="login.html">Already Have An Acount?</a>
+	</center>
+	</form>
+	
+</body></html>

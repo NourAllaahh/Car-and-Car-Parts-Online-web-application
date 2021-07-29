@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+<link href="lux.css" rel="stylesheet"
+		type="text/css"/>
+		<script type ="text/javascript">
+			function validatation(){
+				var email = document.getElementById("email").value;
+				var pass = document.getElementById("pass").value;
+				if(email==""|| pass==""){
+					alert("both fields should not be blank");
+					return false;
+				}
+				return true;
+			}	
+		</script>
+	
+</head>
+<body>
+<div class ="jumbotron text-center" style="margin-bottom:0px">
+			<h1> Welcome to NAH Motors </h1>
+			<p> Login to browse and register your dream car </p>
+			<header id="header-background">
+		<div class="logo"></div>
+		</header>
+		</div>
+
+ <center>
+ <form action="home page.html" name="Login" onSubmit="return validatation();">
+	    <div class="form-group">
+      <label for="exampleInputEmail1"><b>Email address</b></label>
+      <input type="email"id="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Password</label>
+      <input type="password" id="pass" name="pass" class="form-control" id="exampleInputPassword1" placeholder="Password">
+    </div>
+	<form action="#" method="get">
+	<button type="Submit" class="btn btn-success">Login</button>
+	</form>
+	<br>
+	<br>
+	<a href="Signup Page.html">Don't Have An Account?</a>
+	</center>
+	</form>
+
+</body>
+</html>
